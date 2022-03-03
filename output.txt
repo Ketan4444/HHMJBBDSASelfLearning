@@ -1,5 +1,6 @@
-*****
-   *
-  *
- *
-*****
+Sum of 10 and 30 is 40
+Product of 10 and 30 is 300
+0
+3
+0
+7
