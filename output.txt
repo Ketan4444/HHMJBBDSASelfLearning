@@ -1,4 +1,1 @@
-10 is even.
-Understanding if else is fun
-10 is equal to 10
-10 is smaller than 12
+fair
