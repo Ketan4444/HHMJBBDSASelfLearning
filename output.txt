@@ -1,6 +1,4 @@
-Sum of 10 and 30 is 40
-Product of 10 and 30 is 300
-0
-3
-0
-7
+10 is even.
+Understanding if else is fun
+10 is equal to 10
+10 is smaller than 12
