@@ -81,6 +81,22 @@ public class hhm_d2
 
         System.out.println("Out of the for loop");
     }
+
+    public static void understandingPreAndPostIncrement()
+    {
+        int i = 10;
+
+        if(i++ == i)
+        System.out.println(i + " is good.");
+        else
+        System.out.println(i + " is bad");
+
+        int j = 100;
+        if(++j == j)
+        System.out.println(j + " is good.");
+        else
+        System.out.println(j + " is bad");
+    }
     public static void main(String[] args)
     {
             // understandingIfElse();
@@ -89,7 +105,9 @@ public class hhm_d2
 
             //gradingSystem(78);
 
-            understandingforLoop();
-            understandingwhileLoop();
+            // understandingforLoop();
+            // understandingwhileLoop();
+
+            understandingPreAndPostIncrement();
     }
 }
