@@ -58,12 +58,38 @@ public class hhm_d2
         else
         System.out.println("below par");
     }
+
+    public static void understandingwhileLoop()
+    {
+        int i = 1;
+
+        while(i <= 10)
+        {
+            System.out.println(i);
+            i++;
+        }
+
+        System.out.println("Out of the loop");
+    }
+
+    public static void understandingforLoop()
+    {
+        for(int i = 1; i <= 100; i++)
+        {
+            System.out.println(i);
+        }
+
+        System.out.println("Out of the for loop");
+    }
     public static void main(String[] args)
     {
             // understandingIfElse();
             // understandingIfElseIf();
             // understandingifelseStack();
 
-            gradingSystem(78);
+            //gradingSystem(78);
+
+            understandingforLoop();
+            understandingwhileLoop();
     }
 }
