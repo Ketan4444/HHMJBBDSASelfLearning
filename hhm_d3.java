@@ -52,10 +52,21 @@ public class hhm_d3 {
             System.out.println("not prime");
         }
     }
+
+    public static void printPrimesInRange(int lo , int hi)
+    {
+        for(int i = lo; i <= hi; i++)
+        {
+            if(isPrime(i))
+            System.out.println(i);
+        }
+    }
     public static void main(String[] args)
     {
+        Scanner scn = new Scanner(System.in);
         //understandingInput();
-        printPrime();
+        //printPrime();
+        printPrimesInRange(scn.nextInt(), scn.nextInt());
 
     }
     
