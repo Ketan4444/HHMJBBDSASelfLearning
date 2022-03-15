@@ -75,13 +75,27 @@ public class hhm_d3 {
             b = c;
         }
     }
+
+    public static void countDigits(int num)
+    {
+        int count = 0;
+
+        while(num != 0)
+        {
+            num /= 10;
+            count++;
+        }
+
+        System.out.println(count);
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
         //understandingInput();
         //printPrime();
         //printPrimesInRange(scn.nextInt(), scn.nextInt());
-        printFibonacci(scn.nextInt());
+        //printFibonacci(scn.nextInt());
+        countDigits(scn.nextInt());
 
     }
     
