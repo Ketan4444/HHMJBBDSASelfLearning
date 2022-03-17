@@ -88,6 +88,26 @@ public class hhm_d3 {
 
         System.out.println(count);
     }
+
+    public static void printDigits(int num)
+    {
+        int temp = num;
+        int pow = 1;
+
+        while(temp >= 10)
+        {
+            pow *= 10;
+            temp /= 10;
+        }
+
+        while(pow != 0)
+        {
+            int quo = num / pow;
+            System.out.println(quo);
+            num = num % pow;
+            pow /= 10;
+        }
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
@@ -95,7 +115,8 @@ public class hhm_d3 {
         //printPrime();
         //printPrimesInRange(scn.nextInt(), scn.nextInt());
         //printFibonacci(scn.nextInt());
-        countDigits(scn.nextInt());
+        //countDigits(scn.nextInt());
+        printDigits(scn.nextInt());
 
     }
     
