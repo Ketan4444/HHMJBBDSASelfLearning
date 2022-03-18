@@ -205,6 +205,14 @@ public class hhm_d3 {
         else
         System.out.println(false);
     }
+
+    public static void benjaminBulbs(int n)
+    {
+        for(int i = 1 ; i * i <= n; i++)
+        {
+            System.out.println(i * i);
+        }
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
@@ -219,7 +227,8 @@ public class hhm_d3 {
         //rotateANumber(scn.nextInt(), scn.nextInt());
         //gcdAndLcm(scn.nextInt(), scn.nextInt());
         //primeFactorization(scn.nextInt());
-        pythaGoreanTriplet(scn.nextInt(), scn.nextInt(), scn.nextInt());
+        //pythaGoreanTriplet(scn.nextInt(), scn.nextInt(), scn.nextInt());
+        benjaminBulbs(scn.nextInt());
 
     }
     
