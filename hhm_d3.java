@@ -132,6 +132,38 @@ public class hhm_d3 {
         }
         System.out.println(inv);
     }
+
+    public static void rotateANumber(int num , int k)
+    {
+        int nod = 0;
+        int temp = num;
+        while(temp != 0)
+        {
+            temp /= 10;
+            nod++;
+        }
+
+        k = k % nod;
+        if(k < 0)
+        k += nod;
+
+        int div = 1;
+        int mul = 1;
+
+        for(int i = 1 ; i <= nod; i++)
+        {
+            if(i <= k)
+            div *= 10;
+            else
+            mul *= 10;
+        }
+
+        int quo = num / div;
+        int rem = num % div;
+        int ans = rem * mul + quo;
+        System.out.println(ans);
+
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
@@ -142,7 +174,8 @@ public class hhm_d3 {
         //countDigits(scn.nextInt());
         //printDigits(scn.nextInt());
         //printInReverse(scn.nextInt());
-        inverseOfNumber(scn.nextInt());
+        //inverseOfNumber(scn.nextInt());
+        rotateANumber(scn.nextInt(), scn.nextInt());
 
     }
     
