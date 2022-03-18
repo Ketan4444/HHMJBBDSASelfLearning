@@ -164,6 +164,24 @@ public class hhm_d3 {
         System.out.println(ans);
 
     }
+
+    public static void gcdAndLcm(int num1 , int num2)
+    {
+        int on1 = num1;
+        int on2 = num2;
+
+        while(num1 % num2 != 0)
+        {
+            int rem = num1 % num2;
+            num1 = num2;
+            num2 = rem;
+        }
+
+        System.out.println(num2);
+
+        int lcm = (on1 * on2) / num2;
+        System.out.println(lcm);
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
@@ -175,7 +193,8 @@ public class hhm_d3 {
         //printDigits(scn.nextInt());
         //printInReverse(scn.nextInt());
         //inverseOfNumber(scn.nextInt());
-        rotateANumber(scn.nextInt(), scn.nextInt());
+        //rotateANumber(scn.nextInt(), scn.nextInt());
+        gcdAndLcm(scn.nextInt(), scn.nextInt());
 
     }
     
