@@ -117,6 +117,21 @@ public class hhm_d3 {
             num /= 10;
         }
     }
+
+    public static void inverseOfNumber(int num)
+    {
+        int inv = 0;
+        int count = 1;
+
+        while(num != 0)
+        {
+            int place = num % 10;
+            inv = inv + count * (int)Math.pow(10 , place - 1);
+            num /= 10;
+            count++;
+        }
+        System.out.println(inv);
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
@@ -126,7 +141,8 @@ public class hhm_d3 {
         //printFibonacci(scn.nextInt());
         //countDigits(scn.nextInt());
         //printDigits(scn.nextInt());
-        printInReverse(scn.nextInt());
+        //printInReverse(scn.nextInt());
+        inverseOfNumber(scn.nextInt());
 
     }
     
