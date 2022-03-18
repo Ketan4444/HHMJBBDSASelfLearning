@@ -197,6 +197,14 @@ public class hhm_d3 {
         if(num > 1)
         System.out.println(num);
     }
+
+    public static void pythaGoreanTriplet(int a , int b , int c)
+    {
+        if((a * a) == (b * b + c * c) || (b * b) == (a * a + c * c) || (c * c) == (a * a + b * b))
+        System.out.println(true);
+        else
+        System.out.println(false);
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
@@ -210,7 +218,8 @@ public class hhm_d3 {
         //inverseOfNumber(scn.nextInt());
         //rotateANumber(scn.nextInt(), scn.nextInt());
         //gcdAndLcm(scn.nextInt(), scn.nextInt());
-        primeFactorization(scn.nextInt());
+        //primeFactorization(scn.nextInt());
+        pythaGoreanTriplet(scn.nextInt(), scn.nextInt(), scn.nextInt());
 
     }
     
