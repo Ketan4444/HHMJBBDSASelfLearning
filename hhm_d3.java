@@ -182,6 +182,21 @@ public class hhm_d3 {
         int lcm = (on1 * on2) / num2;
         System.out.println(lcm);
     }
+
+    public static void primeFactorization(int num)
+    {
+        for(int div = 2 ; div * div <= num; div++)
+        {
+            while(num % div == 0)
+            {
+                System.out.println(div);
+                num /= div;
+            }
+        }
+
+        if(num > 1)
+        System.out.println(num);
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
@@ -194,7 +209,8 @@ public class hhm_d3 {
         //printInReverse(scn.nextInt());
         //inverseOfNumber(scn.nextInt());
         //rotateANumber(scn.nextInt(), scn.nextInt());
-        gcdAndLcm(scn.nextInt(), scn.nextInt());
+        //gcdAndLcm(scn.nextInt(), scn.nextInt());
+        primeFactorization(scn.nextInt());
 
     }
     
