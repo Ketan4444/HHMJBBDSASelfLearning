@@ -108,6 +108,15 @@ public class hhm_d3 {
             pow /= 10;
         }
     }
+
+    public static void printInReverse(int num)
+    {
+        while(num != 0)
+        {
+            System.out.println(num % 10);
+            num /= 10;
+        }
+    }
     public static void main(String[] args)
     {
         Scanner scn = new Scanner(System.in);
@@ -116,7 +125,8 @@ public class hhm_d3 {
         //printPrimesInRange(scn.nextInt(), scn.nextInt());
         //printFibonacci(scn.nextInt());
         //countDigits(scn.nextInt());
-        printDigits(scn.nextInt());
+        //printDigits(scn.nextInt());
+        printInReverse(scn.nextInt());
 
     }
     
